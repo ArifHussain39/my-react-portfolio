@@ -1,6 +1,7 @@
-import Header from './components/header';
-import { HeroSection } from './components/hero-section';
-import Footer from './components/footer';
+import Header from './components/Header';
+import HeroSection from './components/Hero-section';
+import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

@@ -1,42 +1,46 @@
-export default function Header() {
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+export default function NavScrollExample() {
     return (
-        <header style={headerStyle}>
-            <h1>My Website</h1>
-            <nav>
-                <ul style={navStyle}>
-                    <li><a href="/" style={linkStyle}>Home</a></li>
-                    <li><a href="/about" style={linkStyle}>About</a></li>
-                    <li><a href="/contact" style={linkStyle}>Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <Navbar expand="lg" className="bg-body-tertiary">
+            <Container fluid>
+                <Navbar.Brand href="#">Arif Hussain</Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll">
+                    <Nav
+                        className="me-auto my-2 my-lg-0"
+                        style={{ maxHeight: '100px' }}
+                        navbarScroll
+                    >
+                        <Nav.Link href="#action1">Home</Nav.Link>
+                        <Nav.Link href="#action2">Projects</Nav.Link>
+                        <NavDropdown title="Reviews " id="navbarScrollingDropdown">
+                            <NavDropdown.Item href="#action3">Buyer Reviews</NavDropdown.Item>
+                            <NavDropdown.Item href="#action4">
+
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action5">
+                                Seller Reviews
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link href="#action2">Contact</Nav.Link>
+                    </Nav>
+                    <Form className="d-flex">
+                        <Form.Control
+                            type="search"
+                            placeholder="Search"
+                            className="me-2"
+                            aria-label="Search"
+                        />
+                        <Button variant="outline-success">Search</Button>
+                    </Form>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 }
-
-const headerStyle = {
-    background: '#333',
-    color: '#fff',
-    padding: '10px',
-    textAlign: 'center',
-};
-
-const navStyle = {
-    listStyle: 'none',
-    display: 'flex',
-    justifyContent: 'center',
-};
-
-const linkStyle = {
-    color: '#fff',
-    textDecoration: 'none',
-    margin: '0 10px',
-    padding: '5px 10px', // Add padding to make it look like a button
-    borderRadius: '5px',   // Add border radius for rounded corners
-    backgroundColor: '#007bff', // Background color for the button
-    transition: 'background-color 0.3s', // Add a smooth transition for hover effect
-
-    // Hover effect
-    ':hover': {
-        backgroundColor: '#0056b3',
-    },
-};
