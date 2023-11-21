@@ -2,7 +2,7 @@ import Img from '../assets/imgs/hero-bg.png';
 export default function HeroSection() {
     return (
         <>
-            <div className="conatiner">
+            <div className="conatiner" style={{padding:'40px'}}>
                 <div className="row">
                     <div className=" col-sm-12 col-lg-6 col-md-6">
                         <h1>Arif Hussain</h1>
@@ -12,7 +12,7 @@ export default function HeroSection() {
                         </p>
                     </div>
                     <div className=" col-sm-12 col-lg-6 col-md-6">
-                        <img src={Img}  alt="Arif Hussain" className="img-fluid hero-img" />
+                        <img src={Img} alt="Arif Hussain" className="img-fluid hero-img" />
                     </div>
                 </div>
             </div>

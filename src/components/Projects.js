@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import P1 from '../assets/imgs/wilsonport 1.png';
+import P1 from '../assets/imgs/hero-bg.png';
 
 const Projects = () => {
   const projectsData = [
@@ -15,6 +15,18 @@ const Projects = () => {
     {
       title: 'Project 3',
       description: 'This is the description of Project 3.',
+    },
+    {
+      title: 'Project 4',
+      description: 'This is the description of Project 4.',
+    },
+    {
+      title: 'Project 5',
+      description: 'This is the description of Project 5.',
+    },
+    {
+      title: 'Project 6',
+      description: 'This is the description of Project 6.',
     },
   ];
 
