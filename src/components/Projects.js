@@ -34,7 +34,7 @@ const Projects = () => {
   return (
     <section className="py-5">
       <Container>
-        <h2 className="text-center">Projects</h2>
+        <h2 className="text-center text-white">Projects</h2>
         <Row>
           {projectsData.map((project, index) => (
             <Col key={index} md={4} className="mb-4">
