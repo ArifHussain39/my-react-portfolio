@@ -14,7 +14,7 @@ export default function HeroSection() {
                 </div>
                 <div className="row">
                     <div className=" col-sm-12 col-lg-12 col-md-12  justify-content-center d-flex">
-                        <img src={Img} alt="Arif-Hussain-picture" style={{height:'200px'}} className="img-fluid hero-img"  />
+                        <img src={Img} alt="Arif-Hussain" style={{height:'200px'}} className="img-fluid hero-img"  />
                     </div>
                 </div>
             </div>

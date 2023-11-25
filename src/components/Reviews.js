@@ -1,80 +1,23 @@
-import React from 'react';
-import { Card, ListGroup, ListGroupItem, Col, Row } from 'react-bootstrap';
+import ReviewImg from '../assets/imgs/logo-img.jpeg';
+import { Star } from 'lucide-react';
 
-export const BuyerReviews = () => {
-    const reviews = [
-        {
-            name: "John Doe",
-            comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            rating: 4,
-        },
-        {
-            name: "Jane Smith",
-            comment: "Pellentesque habitant morbi fames ac turpis egestas.",
-            rating: 5,
-        },
-        {
-            name: "Bob Johnson",
-            comment: "Nullam vel felis vel velit laoreet dictum.",
-            rating: 3,
-        },
-    ];
-
+export default function Reviews() {
     return (
-        <Row>
-            {reviews.map((review, index) => (
-                <Col key={index} lg={4} md={6} sm={12}>
-                    <Card>
-                        <Card.Header>{review.name}</Card.Header>
-                        <Card.Body>
-                            <Card.Text>{review.comment}</Card.Text>
-                        </Card.Body>
-                        <ListGroup className="list-group-flush">
-                            <ListGroupItem>Rating: {review.rating}</ListGroupItem>
-                        </ListGroup>
-                    </Card>
-                </Col>
-            ))}
-        </Row>
-    );
-};
-
-
-
-export const SellerReviews = () => {
-    const reviews = [
-        {
-            name: "John Doe",
-            comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            rating: 4,
-        },
-        {
-            name: "Jane Smith",
-            comment: "Pellentesque habitant malesuada fames ac turpis egestas.",
-            rating: 5,
-        },
-        {
-            name: "Bob Johnson",
-            comment: "Nullam vel felis vel velit laoreet dictum.",
-            rating: 3,
-        },
-    ];
-
-    return (
-        <Row>
-            {reviews.map((review, index) => (
-                <Col key={index} lg={4} md={6} sm={12}>
-                    <Card>
-                        <Card.Header>{review.name}</Card.Header>
-                        <Card.Body>
-                            <Card.Text>{review.comment}</Card.Text>
-                        </Card.Body>
-                        <ListGroup className="list-group-flush">
-                            <ListGroupItem>Rating: {review.rating}</ListGroupItem>
-                        </ListGroup>
-                    </Card>
-                </Col>
-            ))}
-        </Row>
+        <div style={{ textAlign: 'center', color: 'white' }}>
+            <h1>Reviews</h1>
+            <div className="row mt-5 mb-5">
+                <div>
+                    <img src={ReviewImg} alt="ReviewImg" style={{ height: '70px' }} />
+                    <h3>Arif Hussain</h3>
+                    <Star size={20} style={{ color: 'yellow' }} />
+                    <Star size={20} style={{ color: 'yellow' }} />
+                    <Star size={20} style={{ color: 'yellow' }} />
+                    <Star size={20} style={{ color: 'yellow' }} />
+                    <Star size={20} style={{ color: 'yellow' }} />
+                    <p>Arif is a very talented developer. He is very good at what he does. 
+                        <br />He is very professional and always delivers on time. I would highly recommend him.</p>
+                </div>
+            </div>
+        </div>
     );
 }

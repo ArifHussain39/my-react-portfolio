@@ -17,7 +17,7 @@ const ContactForm = () => {
 
 
   return (
-    <div style={{ padding: '40px' }}>
+    <div className='text-white' style={{ padding: '40px' }}>
       <h2 className="text-center">Contact Us!</h2>
       <Form>
         <Form.Group controlId="formBasicName">
@@ -35,7 +35,7 @@ const ContactForm = () => {
           <Form.Control value={userinfo.message} onChange={(e) => setUserinfo({...userinfo, message:e.target.value})} as="textarea" rows={5} placeholder="Your message" />
         </Form.Group>
 
-        <Button onClick={submitInfo} variant="primary" type="submit" style={{ marginTop: '20px' }}>
+        <Button onClick={submitInfo} className='btn-secondary' type="submit" style={{ marginTop: '20px' }}>
           Submit
         </Button>
       </Form>
