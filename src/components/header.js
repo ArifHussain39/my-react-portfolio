@@ -7,7 +7,7 @@ export default function NavScrollExample() {
     return (
         <Navbar expand="lg" className=" navbar-light bg-dark" style={{ padding: '20px' }}>
             <Container fluid>
-                <Navbar.Brand href="#"><Link style={{ textDecoration: 'none', color: 'white' }} to="/" ><i class="bi bi-code-slash"></i></Link> </Navbar.Brand>
+                <Navbar.Brand href="#"><Link style={{ textDecoration: 'none', color: 'white' }} to="/" ><i className="bi bi-code-slash"></i></Link> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
