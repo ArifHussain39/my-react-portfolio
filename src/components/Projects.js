@@ -16,18 +16,7 @@ const Projects = () => {
       title: 'Project 3',
       description: 'This is the description of Project 3.',
     },
-    {
-      title: 'Project 4',
-      description: 'This is the description of Project 4.',
-    },
-    {
-      title: 'Project 5',
-      description: 'This is the description of Project 5.',
-    },
-    {
-      title: 'Project 6',
-      description: 'This is the description of Project 6.',
-    },
+
   ];
 
 
