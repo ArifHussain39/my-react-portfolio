@@ -18,10 +18,24 @@ export default function HeroSection() {
                         <img src={Img} alt="Arif-Hussain" style={{ height: '150px' }} className="img-fluid hero-img" />
                     </div>
                 </div>
-                <div className="row mt-5">
-                    <div className=" col-sm-12 col-lg-12 col-md-12  justify-content-center d-flex">
-                        <img src={Img2} alt="Arif-Hussain" style={{ height: '60%' }} className="img-fluid hero-img" />
-                    </div>
+            </div>
+
+            <div className="mt-5 d-flex justify-content-center">
+                <img
+                    src={Img2}
+                    alt="Arif-Hussain"
+                    style={{ width: '100%', height: 'auto', maxWidth: '60%' }}
+                    className="img-fluid hero-img"
+                />
+            </div>
+
+            <div className="Intro-section-outer">
+                <div className="Intro-section">
+
+                    <h1>Hi, I’m Arif. Nice to meet you.</h1>
+                    <p>
+                        Since beginning my journey as a freelance designer nearly 10 <br />years ago, I've done remote work for agencies, consulted <br />for startups, and collaborated with talented people to <br />create digital products for both business and consumer <br />use. I'm quietly confident, naturally curious, <br />and perpetually working on improving my chops one design <br />problem at a time.
+                    </p>
                 </div>
             </div>
         </>

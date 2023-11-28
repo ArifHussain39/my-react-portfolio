@@ -16,4 +16,17 @@ body {
 
 .navbar-light .navbar-toggler-icon {
     background-color: white;
-  }
+}
+
+.Intro-section-outer{
+ background-color:#6E07F3;
+ height: 600px;
+ margin-top: -100px;
+}
+.Intro-section{
+    padding: 70px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
