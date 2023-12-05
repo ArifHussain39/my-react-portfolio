@@ -15,6 +15,7 @@ export default function NavScrollExample() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
+                         <Nav.Link href="#action2"> <Link style={{ textDecoration: 'none', color: 'white' }} to="/products" >Products</Link></Nav.Link>
                         <Nav.Link href="#action2"> <Link style={{ textDecoration: 'none', color: 'white' }} to="/projects" >Projects</Link></Nav.Link>
                         <Nav.Link href="#action2"><Link style={{ textDecoration: 'none', color: 'white' }} to="/about" >About</Link></Nav.Link>
                         <Nav.Link href="#action2"><Link style={{ textDecoration: 'none', color: 'white' }} to="/resume" >Resume</Link></Nav.Link>

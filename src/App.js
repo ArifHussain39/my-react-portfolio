@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Welcomepage from './components/Welcomepage';
 import Contact from './components/Contact';
 import ScrollToTopButton from './components/scrollBtn';
+import Products from './components/Products';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Welcomepage />} /> 
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
       <ScrollToTopButton />
       <Footer />
