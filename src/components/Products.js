@@ -27,7 +27,7 @@ export default function Products() {
                 {
                     products.map(product => {
                         return <div className="col-sm-6 col-md-4 col-lg-3  ms-3 me-3 mt-3 align-items-center">
-                            <img src={product.image} alt=""  />
+                            <img src={product.image} alt="" style={{ maxHeight: '200px' }} />
                             <h5 className="text-center">{product.title}</h5>
                             <p className="text-center">{product.description}</p>
                             <h3 className="text-end">Rs. {product.price}</h3>
