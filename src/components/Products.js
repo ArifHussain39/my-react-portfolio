@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Products() {
 
@@ -22,15 +23,15 @@ export default function Products() {
     return (
 
         <>
-            <div className="container row " style={{color:'white'}}>
+            <div className="row container" style={{ color: 'white' }}>
                 <h1>Products</h1>
                 {
                     products.map(product => {
-                        return <div className="col-sm-6 col-md-4 col-lg-3  ms-3 me-3 mt-3 align-items-center">
-                            <img src={product.image} alt="" style={{ maxHeight: '200px' }} />
-                            <h5 className="text-center">{product.title}</h5>
+                        return <div className="col-sm-12 col-md-4 col-lg-3  ms-2 me-2 mt-2 align-items-center">
+                            <img src={product.image} alt=""  />
+                            <h3 className="text-center">{product.title}</h3>
                             <p className="text-center">{product.description}</p>
-                            <h3 className="text-end">Rs. {product.price}</h3>
+                            <span className="text-end">Rs. {product.price}</span>
                         </div>
 
                     })
