@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import ScrollToTopButton from './components/scrollBtn';
 import Products from './components/Products';
 import { Container, Row, Col, Dropdown } from 'react-bootstrap';
+import Resume from './components/Resume';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
       <ScrollToTopButton />
       <Footer />
