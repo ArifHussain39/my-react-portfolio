@@ -1,14 +1,46 @@
 import Img from '../assets/imgs/logo-img.jpeg';
 import Img2 from '../assets/imgs/hero-devices.svg';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
+
 export default function HeroSection() {
+    const [text] = useTypewriter({
+        words: [
+            'Web Applications Developer',
+        ],
+        loop: 1,
+
+    });
     return (
         <>
             <div className="conatiner" style={{ padding: '40px', color: 'white' }}>
                 <div className="row">
                     <div className=" col-sm-12 col-lg-12 col-md-12 text-center">
+
                         <h1 className="dancing-script">Arif Hussain</h1>
-                        <h3>Web Applications Developer</h3>
-                        <p>
+                        {/* <h2>Web Applications Developer</h2> */}
+                        <h1
+                            style={{
+                                fontSize: '4rem',
+                                fontWeight: '700',
+                                letterSpacing: '1px',
+                                color: '#6E07F3',
+                                fontFamily: 'monospace',
+                            }}
+                        >
+                            {text}
+                            <Cursor
+                                cursorStyle='_'
+                            />
+                        </h1>
+                        <p
+                            className="mt-4"
+                            style={{
+                                fontSize: '1.5rem',
+                                fontWeight: '400',
+                                lineHeight: '1.5',
+                                letterSpacing: '1px',
+                            }}
+                        >
                             I design and code beautifully simple things, and I love what I do.
                         </p>
                     </div>
