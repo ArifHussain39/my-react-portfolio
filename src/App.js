@@ -1,4 +1,4 @@
-import Header from './components/Header';
+// import Header from './components/Header';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +10,7 @@ import ScrollToTopButton from './components/scrollBtn';
 function App() {
   return (
     <div >
-      <Header />
+      {/* <Header /> */}
 
       <Routes>
         <Route path="/" element={<Welcomepage />} />
